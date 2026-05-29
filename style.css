@@ -1,0 +1,592 @@
+body {
+    margin: 0;
+    background-color: #d3d3d3;
+    color: #222;
+  }
+  .MontserratAlternates-uniquifier {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+*{
+ font-family: "Montserrat Alternates", sans-serif;
+ font-size: 22px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+  /* Верхнее меню */
+  header{
+    background: #ccc;
+  }
+  header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  nav {
+    display: flex;
+    gap: 15px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+  }
+
+  /* Главный блок */
+.main-header {
+    text-align: center;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+h2 {
+   display: flex;  
+  font-size: 28px;
+    font-weight: bold;
+    color: #e66142;
+    margin-top: 15px;
+    justify-content: center;
+  }
+
+p {
+    margin: 10px 0;
+  }
+
+button {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  /* Галерея изображений */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+  }
+   .container2 {
+    display: flex;
+    gap: 20px; /* расстояние между карточками */
+    justify-content: center;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 200px;
+    box-sizing: border-box;
+    border-top: 3px solid #a0522d; /* индекс цвета стенда */
+    cursor: default;
+    transition: transform 0.2s;
+  }
+  .card_top {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 200px;
+    box-sizing: border-box;
+    border-top: 3px solid #a0522d; /* индекс цвета стенда */
+    cursor: default;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-3px);
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #a0522d;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: #555;
+  }
+
+.image-item {
+  display: flex;  
+  border: 2px solid #878787;
+    padding: 5px;
+    width: 25%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+  }
+  .image-item2 {
+  display: flex;  
+  border: 2px solid #878787;
+    padding: 5px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+  }
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Соцсети */
+.social-section {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  /* Новые проекты */
+
+
+h3 {
+  display: flex; 
+  font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    justify-content: center;
+  font-weight: bold;
+  }
+
+
+section{
+  margin-bottom: 100px;
+}
+
+
+.project h4 {
+    margin: 10px 0 5px 0;
+    font-size: 18px;
+  }
+
+.project p {
+    font-size: 14px;
+  }
+
+  .cards-container {
+    display: flex;
+    gap: 20px;
+  }
+  .card {
+    width: 45%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: end;
+    display: flex;
+  }
+ 
+.card_top {
+   width: 45%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+ /* Отзывы */
+
+
+.review {
+    width: 40%;
+    
+    background: #fff;
+    padding: 15px;
+    
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+.flex_review{
+  display: flex;
+  justify-content: space-between;
+}
+.review p {
+    font-style: italic;
+  }
+
+.review .author {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+.author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+.nav-pag {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+.nav-pag button {
+    padding: 5px 10px;
+    border: 1px solid #999;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  /* Работники новые */
+ .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .project_left{
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0.01px;
+}
+.project_right{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.01px;
+  text-align: left;
+}
+.poject_left img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .case-title {
+     font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 3px;
+    font-weight: bold ;
+  }
+  .description {
+    font-size: 1.12rem;
+    color: #6a6a6a;
+    margin-bottom: 16px;
+  }
+
+ /* Оставляем заявку */
+.footer-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+.footer-section h2 {
+    font-size: 24px;
+  }
+
+.footer-section p {
+    margin-top: 10px;
+  }
+
+ /* Нижний колонтитул */
+footer .container {
+    
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+footer{
+  background: #ccc;
+}
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+.footer-left .circle-small {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+  }
+
+.footer-center {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+.footer-center div {
+    min-width: 80px;
+  }
+
+.footer-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+ }
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap:20px;
+  
+}
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: max-content;
+  gap: 5%;
+}
+.flex-container2{
+    display:flex;
+    flex-direction: row;
+     align-items: center;
+      max-width: 90%;
+      gap: 40px;
+}
+.form-group input{
+  width: 400px;
+  height: 35px;
+  border-radius: 8px;
+}
+
+/* ================= TEAM ================= */
+
+.team{
+    display:flex;
+    flex-direction:column;
+    gap:60px;
+    width: 60%;
+}
+
+.team-card{
+    background:#fff;
+    border:2px solid #000;
+    border-radius:12px;
+    box-shadow:10px 10px 0 #000;
+    overflow:hidden;
+
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:40px;
+
+    padding:24px;
+}
+
+.team-image{
+    width:100%;
+    height:100%;
+    min-height:420px;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.team-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.team-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.team-role{
+    font-size:20px;
+    font-weight:500;
+    margin-bottom:10px;
+}
+
+.team-name{
+    font-size:42px;
+    line-height:1;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+.team-description{
+    font-size:22px;
+    line-height:1.7;
+    font-weight:700;
+    max-width:850px;
+}
+
+.socials{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid #999;
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.socials span{
+    color:#4D4D4D;
+    font-weight:700;
+}
+
+.social-links{
+    display:flex;
+    gap:14px;
+}
+
+.social-links a{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#000;
+    color:#fff;
+    text-decoration:none;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:.3s;
+}
+
+.social-links a:hover{
+    background:#CD4631;
+    transform:translateY(-3px);
+}
+
+@media(max-width:900px){
+
+    .team-card{
+        grid-template-columns:1fr;
+    }
+
+    .team-image{
+        min-height:350px;
+    }
+
+    .team-name{
+        font-size:34px;
+    }
+
+    .team-description{
+        font-size:18px;
+    }
+
+    .form{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .menu{
+        gap:20px;
+    }
+
+    .menu a{
+        font-size:18px;
+    }
+
+    .contact p{
+        font-size:20px;
+    }
+
+    button{
+        font-size:24px;
+    }
+
+}

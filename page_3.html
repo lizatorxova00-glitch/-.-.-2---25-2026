@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700;800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="page3_style.css">
+<title>Артель — Команда</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat Alternates', sans-serif;
+    background:#d6d6d6;
+    color:#000;
+}
+
+.container{
+    width:min(1300px, 92%);
+    margin:0 auto;
+}
+
+section{
+    padding:80px 0;
+}
+
+/* ================= HEADER ================= */
+
+ header{
+    background: #ccc;
+  }
+  header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  nav {
+    display: flex;
+    gap: 15px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+  }
+
+/* ================= HERO ================= */
+
+.hero{
+    text-align:center;
+    padding:100px 0 60px;
+}
+
+.hero h1{
+    font-size:clamp(48px, 8vw, 96px);
+    line-height:1;
+    font-weight:700;
+}
+
+/* ================= TEAM ================= */
+
+.team{
+    display:flex;
+    flex-direction:column;
+    gap:60px;
+}
+
+.team-card{
+    background:#fff;
+    border:2px solid #000;
+    border-radius:12px;
+    box-shadow:10px 10px 0 #000;
+    overflow:hidden;
+
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:40px;
+
+    padding:24px;
+}
+
+.team-image{
+    width:100%;
+    height:100%;
+    min-height:420px;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.team-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.team-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.team-role{
+    font-size:20px;
+    font-weight:500;
+    margin-bottom:10px;
+}
+
+.team-name{
+    font-size:42px;
+    line-height:1;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+.team-description{
+    font-size:22px;
+    line-height:1.7;
+    font-weight:700;
+    max-width:850px;
+}
+
+.socials{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid #999;
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.socials span{
+    color:#4D4D4D;
+    font-weight:700;
+}
+
+.social-links{
+    display:flex;
+    gap:14px;
+}
+
+.social-links a{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#000;
+    color:#fff;
+    text-decoration:none;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:.3s;
+}
+
+.social-links a:hover{
+    background:#CD4631;
+    transform:translateY(-3px);
+}
+
+/* ================= FORM ================= */
+
+.contact{
+    text-align:center;
+}
+
+.contact h2{
+    font-size:clamp(42px, 6vw, 64px);
+    margin-bottom:20px;
+}
+
+.contact p{
+    font-size:28px;
+    color:#4D4D4D;
+    margin-bottom:60px;
+}
+
+.form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    text-align:left;
+}
+
+.form-group.full{
+    grid-column:1 / -1;
+}
+
+label{
+    font-size:20px;
+    font-weight:700;
+}
+
+input,
+textarea{
+    width:100%;
+    border:2px solid #000;
+    border-radius:10px;
+    padding:18px 20px;
+    font-size:18px;
+    font-family:inherit;
+}
+
+textarea{
+    resize:vertical;
+    min-height:180px;
+}
+
+button{
+    margin:40px auto 0;
+    width:100%;
+    max-width:420px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#000;
+    color:#fff;
+
+    padding:28px;
+    font-size:32px;
+    font-weight:700;
+
+    cursor:pointer;
+    transition:.3s;
+box-shadow:6px 6px 0 rgba(0,0,0,.25);
+}
+
+button:hover{
+    transform:translateY(-3px);
+}
+
+/* ================= FOOTER ================= */
+
+footer .container {
+    
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+footer{
+  background: #ccc;
+}
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+.footer-left .circle-small {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+  }
+
+.footer-center {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+.footer-center div {
+    min-width: 80px;
+  }
+
+.footer-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .team-card{
+        grid-template-columns:1fr;
+    }
+
+    .team-image{
+        min-height:350px;
+    }
+
+    .team-name{
+        font-size:34px;
+    }
+
+    .team-description{
+        font-size:18px;
+    }
+
+    .form{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .menu{
+        gap:20px;
+    }
+
+    .menu a{
+        font-size:18px;
+    }
+
+    .contact p{
+        font-size:20px;
+    }
+
+    button{
+        font-size:24px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+ <header>
+      <div class="container">
+      
+        <div class="logo">
+          <div class="circle">А</div>
+          <div>Телль</div>
+        </div>
+        <nav>
+          <a href="#">О нас</a>
+          <a href="#">Команда</a>
+          <a href="#">Портфолио</a>
+          <a href="#">Услуги</a>
+          <a href="#">Контакты</a>
+        </nav>
+      
+      </div>
+    </header> 
+
+<section class="hero">
+    <div class="container">
+        <h1>Артель<br>Наша команда</h1>
+    </div>
+</section>
+
+<section>
+<div class="container team">
+
+    <!-- МАША -->
+
+    <article class="team-card">
+
+        <div class="team-image">
+            <img src="masha.jpg.png" alt="Маша">
+        </div>
+
+        <div class="team-content">
+
+            <div>
+                <div class="team-role">Работник 1</div>
+
+                <h2 class="team-name">Маша Леонтьева</h2>
+
+                <p class="team-description">
+                    Учится в СПБГУПТД. Занимается растровой и векторной графикой,
+                    созданием иллюстраций на заказ. Разбирается в типографии,
+                    создает качественные буклеты. Берется за любые стилистики —
+                    от реалистичных до стилизованных.
+                </p>
+            </div>
+
+            <div class="socials">
+                <span>Мои соц.сети:</span>
+
+                <div class="social-links">
+                    <a href="#">T</a>
+                    <a href="#">X</a>
+                    <a href="#">I</a>
+                </div>
+            </div>
+
+        </div>
+
+    </article>
+
+    <!-- САША -->
+
+    <article class="team-card">
+
+        <div class="team-image">
+            <img src="sasha.jpg.png" alt="Саша">
+        </div>
+
+        <div class="team-content">
+
+            <div>
+                <div class="team-role">Работник 2</div>
+
+                <h2 class="team-name">Саша Корженевская</h2>
+
+                <p class="team-description">
+                    Учится в СПБГУПТД. Создает преимущественно концепт-арты.
+                    Может воплотить задумку по любому сеттингу,
+                    разработать линейку персонажей, объектов и многое другое.
+                    Работает с различными стилистиками в зависимости от идеи.
+                </p>
+            </div>
+
+            <div class="socials">
+                <span>Мои соц.сети:</span>
+
+                <div class="social-links">
+                    <a href="#">T</a>
+                    <a href="#">X</a>
+                    <a href="#">I</a>
+                </div>
+            </div>
+
+        </div>
+
+    </article>
+
+    <!-- ЛИЗА -->
+
+    <article class="team-card">
+
+        <div class="team-image">
+            <img src="liza.jpg.png" alt="Лиза">
+        </div>
+
+        <div class="team-content">
+
+            <div>
+                <div class="team-role">Работник 3</div>
+
+                <h2 class="team-name">Лиза Торхова</h2>
+<p class="team-description">
+                    Учится в СПБГУПТД. Рисует преимущественно в традиционном стиле.
+                    Использует живописные и графические материалы.
+                    Работает в разных стилистиках —
+                    от реалистичных до декоративных.
+                </p>
+            </div>
+
+            <div class="socials">
+                <span>Мои соц.сети:</span>
+
+                <div class="social-links">
+                    <a href="#">T</a>
+                    <a href="#">X</a>
+                    <a href="#">I</a>
+                </div>
+            </div>
+
+        </div>
+
+    </article>
+
+</div>
+</section>
+
+<section class="contact">
+
+<div class="container">
+
+    <h2>Оставь заявку</h2>
+
+    <p>
+        Дай нам знать, если мы заинтересовали вас
+    </p>
+
+    <form class="form">
+
+        <div class="form-group">
+            <label>Полное имя *</label>
+            <input type="text" placeholder="Иван Иванов">
+        </div>
+
+        <div class="form-group">
+            <label>Email *</label>
+            <input type="email" placeholder="johndoe@gmail.com">
+        </div>
+
+        <div class="form-group">
+            <label>Телефон *</label>
+            <input type="tel" placeholder="+7 (999) 999-99-99">
+        </div>
+
+        <div class="form-group">
+            <label>Задача *</label>
+            <input type="text" placeholder="Иллюстрация / дизайн">
+        </div>
+
+        <div class="form-group full">
+            <label>Описание задачи *</label>
+
+            <textarea placeholder="Ваше описание..."></textarea>
+        </div>
+
+    </form>
+
+    <button>Отправить</button>
+
+</div>
+</section>
+
+ <footer>  
+      <div class="container">
+        <div class="footer-left">
+          <div class="circle-small">А</div>
+          <div>Телль</div>
+        </div>
+        <div class="footer-center">
+          <div>О нас</div>
+          <div>Соц.сети</div>
+          <div>Связь с нами</div>
+          <div>Услуги</div>
+          <div>Блог</div>
+        </div>
+      </div>
+      
+    </footer>
+
+</body>
+</html>
